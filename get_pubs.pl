@@ -138,6 +138,12 @@ foreach $j (sort keys %reference_hash) {
     print "$j\n";
 }
 
+#---------------------------------------------------------------
+# Faculty names are below. Record format is:
+#   Field 1: last name  first initial middle initial
+#   Field 2: start year (used to filter results, may be empty)
+#   Field 3: end year (used to filter results, may be empty)
+#---------------------------------------------------------------
 __END__
 biondich p|2000|
 dexter paul|1995|
