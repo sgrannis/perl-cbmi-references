@@ -44,7 +44,10 @@ my %reference_hash;
 while ($auth = <DATA>) {
     $auth =~ s/\s+$//;
     my @a = split/\|/,$auth;
-    $start_date = $a[1];
+    if ($a[1]) {
+    	$start_date = $a[1];
+    } else {
+    	$start_date = 0;
     if ($a[2]) {
 	$end_date = $a[2];
     } else {
