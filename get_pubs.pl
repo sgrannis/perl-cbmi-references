@@ -5,8 +5,8 @@ use LWP::Simple;
 use strict;
 
 #---------------------------------------------------------------------------------------------------
-# Retrieve PubMed references for a given set of author names.
-# See these references, which provide guidance regarding the PubMed query API: 
+# Retrieve PubMed journal references for a given set of author names.
+# The API documentation below describes the PubMed query API:
 #    http://www.alexhadik.com/blog/2014/6/12/create-pubmed-citations-automatically-using-pubmed-api
 #    http://www.ncbi.nlm.nih.gov/books/NBK25497/#chapter2.The_Nine_Eutilities_in_Brief
 #---------------------------------------------------------------------------------------------------
@@ -48,6 +48,7 @@ while ($auth = <DATA>) {
     	$start_date = $a[1];
     } else {
     	$start_date = 0;
+    }
     if ($a[2]) {
 	$end_date = $a[2];
     } else {
