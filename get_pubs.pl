@@ -144,21 +144,22 @@ foreach $j (sort keys %reference_hash) {
 }
 
 #---------------------------------------------------------------
-# Faculty names are below. Record format is:
-#   Field 1: last name  first initial middle initial
+# Faculty names are below. Pipe-delimited record format is:
+#   Field 1: last_name first_initial middle_initial (optional)
 #   Field 2: start year (used to filter results, may be empty)
 #   Field 3: end year (used to filter results, may be empty)
 #---------------------------------------------------------------
 __END__
 biondich p|2000|
+cullen theresa|2015|
 dexter paul|1995|
 dixon be|2000|
 duke jd|2000|
 finnell jt|2000|
-friedlin j|2002|
+friedlin j|2002|2012
 gamache roland|1995|2012
 grannis shaun|2000|
-Imler Timothy|2004|
+imler timothy|2004|
 mamlin b|1995|
 mcdonald clement|1974|2013
 overhage jm|1980|2012
@@ -167,6 +168,7 @@ rosenman mb|2000|2015
 schadow g|2000|2010
 schleyer titus|2013|
 simonaitis linas|2004|2010
+takesue blaine|2010|
 thyvalikakath t|2013|
 vreeman dj|2002|
 were mc|2008|2015
